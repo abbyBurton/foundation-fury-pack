@@ -62,7 +62,7 @@ More are coming — themed by Mortal Kombat, RPGs, and shadow-walking joy.
 
 ---
 
-## 🧠 How to Use
+### 🧠 How to Use
 
 Clone the pack:
 
@@ -71,11 +71,10 @@ git clone https://github.com/abbyBurton/foundation-fury-pack.git
 cd foundation-fury-pack/core/bin
 chmod +x hello-scroll.sh
 ./hello-scroll.sh -n Xio
+```
+---
 
-
-## 🧭 Built with care by abby  
+### 🧭 Built with care by abby  
 Guided by a Codex.  
 Held by fire.  
 And Bourne again through a shell.
-
-
