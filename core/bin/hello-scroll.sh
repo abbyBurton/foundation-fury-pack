@@ -1,45 +1,20 @@
 #!/bin/bash
 
 # 📜 hello-scroll.sh — A foundational invocation scroll
-# A soft welcome to the terminal, and a gentle guide toward deeper learning
+# Gently prompts the scrollbearer for their name
+# Symbolic first script with a warm, interactive ritual
 
 # --------------------------
-# Defaults
+# Prompt for Name
 # --------------------------
-NAME="Apprentice"
-SHOW_HELP=false
 
-# --------------------------
-# Help Function
-# --------------------------
-function show_help() {
-  echo "🔮 Usage: $0 [-n name] [-h]"
-  echo ""
-  echo "🪄 Options:"
-  echo "  -n <name>     Sets the name of the scrollbearer"
-  echo "  -h            Displays this help message"
-  echo ""
-  echo "📘 Example:"
-  echo "  $0 -n Xio"
-}
+echo ""
+echo "🌀 Who awakens the scroll? (Enter your name):"
+read -r NAME
 
-# --------------------------
-# Parse Flags
-# --------------------------
-while getopts "n:h" option; do
-  case "${option}" in
-    n) NAME=${OPTARG} ;;
-    h) SHOW_HELP=true ;;
-    *) show_help; exit 1 ;;
-  esac
-done
-
-# --------------------------
-# Display Help and Exit
-# --------------------------
-if [ "$SHOW_HELP" = true ]; then
-  show_help
-  exit 0
+# Fallback if empty input
+if [ -z "$NAME" ]; then
+  NAME="Apprentice"
 fi
 
 # --------------------------
